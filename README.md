@@ -2,7 +2,7 @@
 
 Prerequisites:
 
-    - JDK 10
+    - JDK 8
     - Gradle
 
 --Create user and database
