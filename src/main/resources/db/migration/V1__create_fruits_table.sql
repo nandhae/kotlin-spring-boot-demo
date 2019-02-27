@@ -1,5 +1,5 @@
 create table if not exists fruits
 (
-  id   integer primary key,
+  id SERIAL,
   name varchar(50) not null
 );

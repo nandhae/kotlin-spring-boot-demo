@@ -18,6 +18,8 @@ repositories {
 }
 
 dependencies {
+    compile 'org.postgresql:postgresql'
+    compile 'org.postgresql:postgresql:42.2.2'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -27,7 +29,6 @@ dependencies {
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
     implementation 'org.flywaydb:flyway-core:5.2.4'
 
-    runtimeOnly 'org.postgresql:postgresql'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation group: 'org.flywaydb.flyway-test-extensions', name:'flyway-spring-test', version: '5.0.0'
 }
